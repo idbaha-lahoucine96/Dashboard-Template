@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bulma Admin | Free Admin Template By @IDBAHA</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Admin Dashboard Template Build with Bulma.io By IDBAHA">
+        <meta name="keywords" content="Bulma,CSS,Admin,Template,Free,Download">
+        <meta name="language" content="en-EN">
+        <meta name="author" content="IDBAHA LAHOUCINE">
+        <meta name="google-adsense-account" content="ca-pub-7864475889913507">
+
+        <link href="https://fonts.googleapis.com/icon?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css" integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="vendor/datatables-bulma/datatables-bulma.min.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <!-- START NAV -->
+        <nav class="navbar columns is-fixed-top" role="navigation" aria-label="main navigation" id="app-header">
+    <div class="navbar-brand column is-2 is-paddingless">
+        <a class="navbar-item" href="index.html">
+            BULMA ADMIN
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="touchMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="touchMenu">
+        <a class="navbar-item " href="index.html">
+            <span class="icon">
+                <i class="fa fa-home"></i>
+            </span> Dashboard
+        </a>
+        <a class="navbar-item " href="forms.html">
+            <span class="icon">
+                <i class="fa fa-edit"></i>
+            </span> Forms
+        </a>
+        <a class="navbar-item " href="elements.html">
+            <span class="icon">
+                <i class="fa fa-desktop"></i>
+            </span> UI Elements
+        </a>
+        <a class="navbar-item is-active" href="datatables.html">
+            <span class="icon">
+                <i class="fa fa-table"></i>
+            </span> Datatables
+        </a>
+    </div>
+
+    <div id="navMenu" class="navbar-menu column is-hidden-touch">
+        <div class="navbar-end">
+            <div class="navbar-item dropdown is-right">
+                <div class="dropdown-trigger">
+                    <a class="dropdown-trigger button is-white" aria-haspopup="true" aria-controls="notification-dropdown">
+                        <span class="icon">
+                            <i class="fa fa-lg fa-bell"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-menu" id="notification-dropdown" role="menu">
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="dropdown-item">
+                            <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            This is a link
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-item">
+                <a class="button is-white app-logout" href="#">
+                    <span class="icon">
+                        <i class="fa fa-lg fa-power-off"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <figure class="image avatar is-32x32">
+                        <img class="is-rounded" src="images/user1.png">
+                    </figure>
+                    &nbsp; Hi, IDBAHA
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        My Profile
+                    </a>
+                    <a class="navbar-item">
+                        Settings
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item app-logout">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+        <!-- END NAV -->
+
+        <div class="columns" id="app-content">
+            <div class="column is-2 is-fullheight is-hidden-touch" id="sidebar">
+    <aside class="menu">
+        <p class="menu-label is-hidden-touch">
+            General
+        </p>
+        <ul class="menu-list">
+            <li>
+                <a class="" href="index.html">
+                    <span class="icon">
+                        <i class="fa fa-home"></i>
+                    </span> Dashboard
+                </a>
+            </li>
+            <li>
+                <a class="" href="forms.html">
+                    <span class="icon">
+                        <i class="fa fa-edit"></i>
+                    </span> Forms
+                </a>
+            </li>
+            <li>
+                <a class="" href="elements.html">
+                    <span class="icon">
+                        <i class="fa fa-desktop"></i>
+                    </span> UI Elements
+                </a>
+            </li>
+            <li>
+                <a class="is-active" href="datatables.html">
+                    <span class="icon">
+                        <i class="fa fa-table"></i>
+                    </span> Datatables
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="icon">
+                        <i class="fa fa-list"></i>
+                    </span> Submenu
+                </a>
+                <ul class="submenu">
+                    <li><a>Menu 1</a></li>
+                    <li><a>Menu 2</a></li>
+                    <li><a>Menu 3</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <p class="menu-label is-hidden-touch">
+            Sample Pages
+        </p>
+        <ul class="menu-list">
+            <li>
+                <a class="" href="#">
+                    <span class="icon">
+                        <i class="fa fa-lock"></i>
+                    </span> Login
+                </a>
+            </li>
+        </ul>
+    </aside>
+</div>
+
+            <div class="column is-10" id="page-content">
+                    <div class="content-header">
+        <h4 class="title is-4">Datatables</h4>
+        <span class="separator"></span>
+        <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#">General</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Datatables</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div class="content-body">
+        <div class="card">
+            <div class="card-filter">
+                <div class="field">
+                    <div class="control has-icons-left has-icons-right">
+                        <input class="input" id="table-search" type="text" placeholder="Search for records...">
+                        <span class="icon is-left">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="select">
+                        <select id="table-length">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="field has-addons">
+                    <p class="control">
+                        <a class="button" href="#">
+                            <span class="icon is-small">
+                                <i class="fa fa-plus"></i>
+                            </span>
+                            <span>Create Record</span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button" id="table-reload">
+                            <span class="icon is-small">
+                                <i class="fa fa-refresh"></i>
+                            </span>
+                            <span>Reload</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="card-content">
+                <table class="table is-hoverable is-bordered is-fullwidth" id="datatable">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Name</th>
+                            <th class="has-text-centered">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Abu Bakar As-Shiddiq</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Umar bin Khattab</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Utsman bin Affan</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ali bin Abi Thalib</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Hamzah bin Abdul-Muththalib</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Mush'ab bin Umair</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Zaid bin Haritsah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Ja'far bin Abu Thalib</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Husain bin Ali</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Sa'ad bin Muadz</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Ammar bin Yasir</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Abad bin Bisyr</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Salim Maula Abi Hudzaifah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Al-Bara' bin Malik</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Abu Dujanah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Amr bin al-Jamuh</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Abu Ayyub al-Anshari</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Abu Thalhah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Abdullah bin Jahsy</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Khubaib bin Adi</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Ikrimah bin Abu Jahal</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Khadijah Binti Khuwailid</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Imam Al-Ghazali</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Sofyan Ats-Tsauri</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Khalid bin Walid</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Utbah bin Ghazwan</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Mush'ab bin Umair</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Mu'adz bin Jabal</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Zaid bin Haritsah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Fatimah binti Muhammad</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>Bilal bin Rabah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>Abdullah bin Zubeir</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>Zainab Binti Jahsy Bin Ri'ab</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Abu Ubaidah bin Jarrah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Ibnu Qayyim Al-Jauziyyah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>Ibnu Katsir</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>Ibnu Taimiyyah</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>Ahmed Deedat</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>Yusuf Qardhawi</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>Imam Muslim</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>Hasan Al Banna</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>Tuanku Tambusai</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>Tuanku Imam Bonjol</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>Sunan Gresik</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>Sunan Ampel</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>Sunan Bonang</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>Sunan Drajat</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>Sunan Kudus</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>Sunan Giri</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>Sunan Kalijaga</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>Sunan Muria</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>Sunan Gunung Jati</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>Jumadil Qubro</td>
+                            <td class="has-text-centered">
+                                <div class="field is-grouped action">
+                                    <p class="control">
+                                        <a href="#" class="button is-rounded is-text">
+                                            <span class="icon">
+                                                <i class="fa fa-edit"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                    <p class="control">
+                                        <a class="button is-rounded is-text action-delete" data-id="1">
+                                            <span class="icon">
+                                                <i class="fa fa-trash"></i>
+                                            </span>
+                                        </a>
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="vendor/datatables-bulma/datatables-bulma.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#datatable').DataTable({
+                dom: "<'columns table-wrapper'<'column is-12'tr>><'columns table-footer-wrapper'<'column is-5'i><'column is-7'p>>"
+            });
+
+            $('#table-search').on('keyup', function() {
+                let value = $(this).val();
+                table.search(value).draw();
+            });
+
+            $('#table-length').on('change', function() {
+                let value = $(this).val();
+                table.page.len(value).draw();
+            });
+
+            $('#table-reload').on('click', function() {
+                table.draw();
+            });
+        });
+    </script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TVE6RNN41"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-4TVE6RNN41');
+        </script>
+
+        <script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","url":"https://www.IDBAHA.com/","name":"Abdul Manaaf | Fullstack Web Developer","author":"Abdul Manaaf","image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4","description":"Abdul Manaaf is a Fullstack Web Developer from Indonesia","sameAs":["https://www.facebook.com/IDBAHA","https://instagram.com/IDBAHA","https://twitter.com/IDBAHA","https://id.linkedin.com/in/IDBAHA","https://github.com/IDBAHA"]}</script>
+
+        <script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:IDBAHA@gmail.com","image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4","jobTitle":"Fullstack Web Developer","name":"Abdul Manaaf","url":"https://www.IDBAHA.com/","sameAs":["https://www.facebook.com/IDBAHA","https://instagram.com/IDBAHA","https://twitter.com/IDBAHA","https://id.linkedin.com/in/IDBAHA","https://github.com/IDBAHA"]}</script>
+
+        <script type=application/ld+json>{
+            "@context":"http://schema.org",
+            "@type":"BreadcrumbList",
+            "itemListElement":[
+               {
+                  "@type":"ListItem",
+                  "position":1,
+                  "item":{
+                     "@id":"https://IDBAHA.com/",
+                     "name":"Home",
+                     "image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4"
+                  }
+               },
+               {
+                  "@type":"ListItem",
+                  "position":2,
+                  "item":{
+                     "@id":"https://IDBAHA.com/bulma-admin/",
+                     "name":"free-bulma-admin-dashboard-template",
+                     "image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4"
+                  }
+               }
+            ]
+         }</script>
+    </body>
+
+<!-- Mirrored from bulma-admin.test/datatables by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 10:20:28 GMT -->
+</html>
