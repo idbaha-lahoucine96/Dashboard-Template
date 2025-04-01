@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bulma Admin | Free Admin Template By @IDBAHA</title>
+
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Admin Dashboard Template Build with Bulma.io By IDBAHA">
+        <meta name="keywords" content="Bulma,CSS,Admin,Template,Free,Download">
+        <meta name="language" content="en-EN">
+        <meta name="author" content="IDBAHA LAHOUCINE">
+        <meta name="google-adsense-account" content="ca-pub-7864475889913507">
+
+        <link href="https://fonts.googleapis.com/icon?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css" integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+                <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <!-- START NAV -->
+        <nav class="navbar columns is-fixed-top" role="navigation" aria-label="main navigation" id="app-header">
+    <div class="navbar-brand column is-2 is-paddingless">
+        <a class="navbar-item" href="index.html">
+            BULMA ADMIN
+        </a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="touchMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="touchMenu">
+        <a class="navbar-item " href="index.html">
+            <span class="icon">
+                <i class="fa fa-home"></i>
+            </span> Dashboard
+        </a>
+        <a class="navbar-item is-active" href="forms.html">
+            <span class="icon">
+                <i class="fa fa-edit"></i>
+            </span> Forms
+        </a>
+        <a class="navbar-item " href="elements.html">
+            <span class="icon">
+                <i class="fa fa-desktop"></i>
+            </span> UI Elements
+        </a>
+        <a class="navbar-item " href="datatables.html">
+            <span class="icon">
+                <i class="fa fa-table"></i>
+            </span> Datatables
+        </a>
+    </div>
+
+    <div id="navMenu" class="navbar-menu column is-hidden-touch">
+        <div class="navbar-end">
+            <div class="navbar-item dropdown is-right">
+                <div class="dropdown-trigger">
+                    <a class="dropdown-trigger button is-white" aria-haspopup="true" aria-controls="notification-dropdown">
+                        <span class="icon">
+                            <i class="fa fa-lg fa-bell"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="dropdown-menu" id="notification-dropdown" role="menu">
+                    <div class="dropdown-content">
+                        <div class="dropdown-item">
+                            <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <div class="dropdown-item">
+                            <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                        </div>
+                        <hr class="dropdown-divider">
+                        <a href="#" class="dropdown-item">
+                            This is a link
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-item">
+                <a class="button is-white app-logout" href="#">
+                    <span class="icon">
+                        <i class="fa fa-lg fa-power-off"></i>
+                    </span>
+                </a>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <figure class="image avatar is-32x32">
+                        <img class="is-rounded" src="images/user1.png">
+                    </figure>
+                    &nbsp; Hi, IDBAHA
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item">
+                        My Profile
+                    </a>
+                    <a class="navbar-item">
+                        Settings
+                    </a>
+                    <hr class="navbar-divider">
+                    <a class="navbar-item app-logout">
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+        <!-- END NAV -->
+
+        <div class="columns" id="app-content">
+            <div class="column is-2 is-fullheight is-hidden-touch" id="sidebar">
+    <aside class="menu">
+        <p class="menu-label is-hidden-touch">
+            General
+        </p>
+        <ul class="menu-list">
+            <li>
+                <a class="" href="index.html">
+                    <span class="icon">
+                        <i class="fa fa-home"></i>
+                    </span> Dashboard
+                </a>
+            </li>
+            <li>
+                <a class="is-active" href="forms.html">
+                    <span class="icon">
+                        <i class="fa fa-edit"></i>
+                    </span> Forms
+                </a>
+            </li>
+            <li>
+                <a class="" href="elements.html">
+                    <span class="icon">
+                        <i class="fa fa-desktop"></i>
+                    </span> UI Elements
+                </a>
+            </li>
+            <li>
+                <a class="" href="datatables.html">
+                    <span class="icon">
+                        <i class="fa fa-table"></i>
+                    </span> Datatables
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span class="icon">
+                        <i class="fa fa-list"></i>
+                    </span> Submenu
+                </a>
+                <ul class="submenu">
+                    <li><a>Menu 1</a></li>
+                    <li><a>Menu 2</a></li>
+                    <li><a>Menu 3</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <p class="menu-label is-hidden-touch">
+            Sample Pages
+        </p>
+        <ul class="menu-list">
+            <li>
+                <a class="" href="#">
+                    <span class="icon">
+                        <i class="fa fa-lock"></i>
+                    </span> Login
+                </a>
+            </li>
+        </ul>
+    </aside>
+</div>
+
+            <div class="column is-10" id="page-content">
+                    <div class="content-header">
+        <h4 class="title is-4">Forms</h4>
+        <span class="separator"></span>
+        <nav class="breadcrumb has-bullet-separator" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="#">General</a></li>
+                <li class="is-active"><a href="#" aria-current="page">Forms</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div class="content-body">
+        <div class="columns">
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">General</p>
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fa fa-check"></i>
+                                </span>
+                            </div>
+                            <p class="help is-success">This username is available</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input is-danger" type="email" placeholder="Email input"
+                                    value="hello@">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fa fa-exclamation-triangle"></i>
+                                </span>
+                            </div>
+                            <p class="help is-danger">This email is invalid</p>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Subject</label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Textarea"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    I agree to the <a href="#">terms and conditions</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    Yes
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link">Submit</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-text">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">Loading</p>
+                        <div class="field">
+                            <div class="control is-small is-loading">
+                                <input class="input is-small" type="text" placeholder="Small loading input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control is-loading">
+                                <input class="input" type="text" placeholder="Normal loading input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control is-medium is-loading">
+                                <input class="input is-medium" type="text" placeholder="Medium loading input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control is-large is-loading">
+                                <input class="input is-large" type="text" placeholder="Large loading input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">Checkboxes &amp; Radios</p>
+                        <div class="field">
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="rsvp">
+                                    Going
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="rsvp">
+                                    Not going
+                                </label>
+                                <label class="radio" disabled>
+                                    <input type="radio" name="rsvp" disabled>
+                                    Maybe
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">Colors</p>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-primary" type="text" placeholder="Primary input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-info" type="text" placeholder="Info input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-success" type="text" placeholder="Success input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-warning" type="text" placeholder="Warning input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-danger" type="text" placeholder="Danger input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">Sizes</p>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-small" type="text" placeholder="Small input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Normal input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium" type="text" placeholder="Medium input">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-large" type="text" placeholder="Large input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">Select</p>
+                        <div class="field">
+                            <div class="control">
+                                <div class="select is-small">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <div class="select is-medium">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <div class="select is-large">
+                                    <select>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="select is-small">
+                                    <select>
+                                        <option selected>Country</option>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="select">
+                                    <select>
+                                        <option selected>Country</option>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                                <span class="icon is-left">
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="select is-medium">
+                                    <select>
+                                        <option selected>Country</option>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                                <span class="icon is-medium is-left">
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control has-icons-left">
+                                <div class="select is-large">
+                                    <select>
+                                        <option selected>Country</option>
+                                        <option>Select dropdown</option>
+                                        <option>With options</option>
+                                    </select>
+                                </div>
+                                <span class="icon is-large is-left">
+                                    <i class="fa fa-globe"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <p class="title is-4">File Input</p>
+                        <div class="field">
+                            <div class="file is-primary">
+                                <label class="file-label">
+                                    <input class="file-input" type="file" name="resume">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fa fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Primary file…
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="file is-info has-name">
+                                <label class="file-label">
+                                    <input class="file-input" type="file" name="resume">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fa fa-upload"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Info file…
+                                        </span>
+                                    </span>
+                                    <span class="file-name">
+                                        Screen Shot 2017-07-29 at 15.54.25.png
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="file is-warning is-boxed">
+                                <label class="file-label">
+                                    <input class="file-input" type="file" name="resume">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fa fa-cloud-upload-alt"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Warning file…
+                                        </span>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="file is-danger has-name is-boxed">
+                                <label class="file-label">
+                                    <input class="file-input" type="file" name="resume">
+                                    <span class="file-cta">
+                                        <span class="file-icon">
+                                            <i class="fa fa-cloud-upload-alt"></i>
+                                        </span>
+                                        <span class="file-label">
+                                            Danger file…
+                                        </span>
+                                    </span>
+                                    <span class="file-name">
+                                        Screen Shot 2017-07-29 at 15.54.25.png
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+            </div>
+        </div>
+
+        <script src="js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TVE6RNN41"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-4TVE6RNN41');
+        </script>
+
+        <script type=application/ld+json>{"@context":"http://schema.org","@type":"WebSite","url":"https://www.IDBAHA.com/","name":"Abdul Manaaf | Fullstack Web Developer","author":"Abdul Manaaf","image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4","description":"Abdul Manaaf is a Fullstack Web Developer from Indonesia","sameAs":["https://www.facebook.com/IDBAHA","https://instagram.com/IDBAHA","https://twitter.com/IDBAHA","https://id.linkedin.com/in/IDBAHA","https://github.com/IDBAHA"]}</script>
+
+        <script type=application/ld+json>{"@context":"http://schema.org","@type":"Person","email":"mailto:IDBAHA@gmail.com","image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4","jobTitle":"Fullstack Web Developer","name":"Abdul Manaaf","url":"https://www.IDBAHA.com/","sameAs":["https://www.facebook.com/IDBAHA","https://instagram.com/IDBAHA","https://twitter.com/IDBAHA","https://id.linkedin.com/in/IDBAHA","https://github.com/IDBAHA"]}</script>
+
+        <script type=application/ld+json>{
+            "@context":"http://schema.org",
+            "@type":"BreadcrumbList",
+            "itemListElement":[
+               {
+                  "@type":"ListItem",
+                  "position":1,
+                  "item":{
+                     "@id":"https://IDBAHA.com/",
+                     "name":"Home",
+                     "image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4"
+                  }
+               },
+               {
+                  "@type":"ListItem",
+                  "position":2,
+                  "item":{
+                     "@id":"https://IDBAHA.com/bulma-admin/",
+                     "name":"free-bulma-admin-dashboard-template",
+                     "image":"https://avatars3.githubusercontent.com/u/7114259?s=460&v=4"
+                  }
+               }
+            ]
+         }</script>
+    </body>
+
+<!-- Mirrored from bulma-admin.test/forms by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Feb 2024 10:20:26 GMT -->
+</html>
